@@ -25,7 +25,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            lucasfegueredo/rotten-potatoes:latest
             lucasfegueredo/rotten-potatoes:${{ github.run_number }}            
   CD:
     needs: [CI]
