@@ -1,13 +1,19 @@
-# rotten-potatoes
+Projeto do curso de Kubernets
 
-## Configuração
+Faça a instalação do k3d e do kubectl.
 
-MONGODB_DB => Nome do database
+Instalar K3D:
+•	https://k3d.io/
 
-MONGODB_HOST => Host do MongoDB
+Instalar Kubectl:
+•	https://kubernetes.io/docs/tasks/tools/
 
-MONGODB_PORT => Posta de acesso ao MongoDB
+Na pasta ./k8s faça o seguinte:
 
-MONGODB_USERNAME => Usuário do MongoDB
+Primeiro comando:
+•	k3d cluster create meucluster --agents 3 --servers 3 -p "8080:30000@loadbalancer"
 
-MONGODB_PASSWORD => Senha do MongoDB
+Segundo comando:
+•	kubectl apply -f deployment.yaml
+
+Para testar, acesse: http://localhost:8080
