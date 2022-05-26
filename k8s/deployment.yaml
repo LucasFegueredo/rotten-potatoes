@@ -1,4 +1,4 @@
-# Deployment do MongoGB
+# Deployment do MongoDB
 
 apiVersion: apps/v1
 kind: Deployment
@@ -58,7 +58,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: lucasfegueredo/rotten-potatoes:v2
+        image: lucasfegueredo/rotten-potatoes:v1
         ports:
         - containerPort: 5000
         env:
