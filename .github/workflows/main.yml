@@ -26,7 +26,7 @@ jobs:
           push: true
           tags: |
             lucasfegueredo/rotten-potatoes:latest
-            lucasfegueredo/rotten-potatoes:v            
+            lucasfegueredo/rotten-potatoes:v${{ github.run_number }}            
 #  CD:
 #    needs: [CI]
 #    runs-on: ubuntu-latest
